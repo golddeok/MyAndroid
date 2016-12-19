@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3CB371">
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="\n\n\n나만의\n옷장관리"
+            android:background="@drawable/clothes"
+            android:textColor="#FFFAFA"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/listviewsample" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="\n\n\n나만의\n잡동사니"
+            android:background="@drawable/etcss"
+            android:textColor="#FFFAFA"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/musicList"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/listviewsample"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="\n\n\n나만의\n맛집관리"
+            android:background="@drawable/food1"
+            android:textColor="#FFFAFA"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/itemList" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/musicList"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="\n\n\n나만의\n매장관리"
+            android:background="@drawable/store1"
+            android:textColor="#FFFAFA"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/gostore1" />
+
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="매장검색 :"
+                android:textSize="20sp"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:textColor="#ffffff"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:backgroundTint="#ffffff"
+                android:hint="주소, 매장입력..."
+                android:textColorHint="#48ffffff"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="검색"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:id="@+id/sButton" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.vcapp.virtualcoordinator.ReviewAddActivity">
+
+    <item
+        android:id="@+id/reviewAddMenu1"
+        android:orderInCategory="1"
+        android:title="완료"
+        android:showAsAction="never"
+
+        />
+
+
+</menu>

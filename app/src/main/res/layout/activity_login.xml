@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3CB371">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FFFAFA"
+        android:text="Virtual Coordinator"
+        android:id="@+id/login_textView" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView33" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:hint="  아이디"
+        android:background="#FFFFFF"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/idText" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:inputType="numberPassword"
+        android:layout_marginTop="10dp"
+        android:hint=" 비밀번호"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:id="@+id/passwordText" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="로그인"
+        android:textColor="#3CB371"
+        android:textSize="15dp"
+        android:background="#FFFFFF"
+        android:textStyle="bold"
+        android:id="@+id/login_btn"
+        android:layout_gravity="center_horizontal" />
+
+    <!--<Button-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#3CB371"-->
+        <!--android:text="회원가입"-->
+        <!--android:textSize="15dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:id="@+id/sign_btn" />-->
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="자동로그인"
+        android:layout_gravity="right"
+        android:id="@+id/autoCheck" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vcapp.virtualcoordinator.ReviewModifyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1"
+        android:orientation="horizontal"
+        android:id="@+id/tableLayout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:padding="10dp"
+            android:text="0.0"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+
+            android:id="@+id/reviewModiRatingText" />
+
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="0.5"
+            android:numStars="5"
+            android:id="@+id/reviewModiRating" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/modiView"
+        android:layout_below="@id/tableLayout1"
+        android:background="#76000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/modiView"
+        android:id="@+id/scrollView" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:hint="내용을 입력하세요."
+            android:saveEnabled="false"
+            android:id="@+id/reviewModiEditText1" />
+    </ScrollView>
+
+</RelativeLayout>

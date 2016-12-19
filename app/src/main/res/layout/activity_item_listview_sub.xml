@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vcapp.virtualcoordinator.ItemListviewSub">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:id="@+id/ksHorizontalScrollView"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="outsideInset">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/ksImage1"
+                    />
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage2"
+                    />
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage3"
+                    />
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage4"
+                    />
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage5"
+                    />
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage6"
+                    />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage7" />
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ksImage8" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#b94757e6"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#b94757e6"/>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ksScrollView" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="평점 :"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/ksFinalText1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0.0"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/ksRatingText" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:stepSize="0.5"
+                        android:numStars="5"
+
+                        android:id="@+id/ksRating" />
+
+                </LinearLayout>
+
+                <fragment
+                    android:id="@+id/ksMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#b94757e6"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#b94757e6"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20sp"
+                    android:text="설명"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/ksTextView1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="매장의 특징\n장점: 옷의 종류가 많다, \n단점: 가격이 비싸다."
+
+                    android:id="@+id/ksTextView2" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#b94757e6"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#b94757e6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20sp"
+                    android:text="관련 정보"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/ksTextView3" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:text="영업 시간"
+                            android:textColor="#000000"
+                            android:id="@+id/ksTextView4" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="15sp"
+                            android:text="8:00 a.m.- 11:00 p.m."
+                            android:textColor="#ab000000"
+                            android:id="@+id/ksTextView5" />
+                    </TableRow>
+
+
+
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:text="가격 및 질"
+                            android:textColor="#000000"
+                            android:id="@+id/ksTextView6" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="15sp"
+                            android:text="상/중/하"
+                            android:textColor="#ab000000"
+                            android:id="@+id/ksTextView7" />
+                    </TableRow>
+
+
+
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:text="전화번호"
+                            android:textColor="#000000"
+                            android:id="@+id/ksTextView8" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="15sp"
+                            android:text="010-8885-7456"
+                            android:textColor="#ab000000"
+                            android:id="@+id/ksPhoneNum" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="16sp"
+                            android:text="웹사이트"
+                            android:textColor="#000000"
+                            android:id="@+id/ksTextView10" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="15sp"
+                            android:text="http://naver.com"
+                            android:textColor="#ab000000"
+                            android:id="@+id/ksHompageText" />
+                    </TableRow>
+
+
+
+                </TableLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#b94757e6"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#b94757e6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20sp"
+                    android:text="위치 서비스"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/ksTextView12" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="경기도 안산시 상록구 사2동"
+
+                    android:id="@+id/ksTextView13" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#b94757e6"/>
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#b94757e6"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20sp"
+                    android:text="재방문 의사"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/ksTextView14" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="있다, 없다, 잘모르겠다."
+
+                    android:id="@+id/ksTextView15" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화하기"
+            android:background="#49cdbe"
+            android:layout_weight="1"
+            android:id="@+id/ksButton1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="웹사이트 방문"
+            android:background="#3394d1"
+            android:layout_weight="1"
+            android:id="@+id/ksButton2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리뷰보기"
+            android:background="#2ba5ff"
+            android:layout_weight="1"
+            android:id="@+id/ksButton3" />
+    </LinearLayout>
+
+</RelativeLayout>

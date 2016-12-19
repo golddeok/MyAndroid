@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vcapp.virtualcoordinator.PhotoActivity"
+    android:background="#3CB371">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_imageview"
+        android:saveEnabled="true"
+        android:background="#eee" />
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:id="@+id/addView"
+        android:background="#303F9F"/>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앨범"
+            android:id="@+id/btn_album"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/img_imageview"
+            android:layout_toStartOf="@+id/img_imageview" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="카메라"
+            android:id="@+id/btn_camera"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_imageview"
+            android:layout_toEndOf="@+id/img_imageview" />
+
+    </TableRow>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:id="@+id/addView1"
+        android:background="#303F9F"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1"
+        android:id="@+id/addTable1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="입은 날짜 :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/dateText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:hint="YY, MM, DD"
+                android:textSize="20dp"
+                android:saveEnabled="true"
+                android:id="@+id/dateEditText" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:id="@+id/addView2"
+        android:background="#303F9F"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1"
+        android:id="@+id/addTable2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="내용 :"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/contentsText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:hint="Explain Items.."
+                android:textSize="20dp"
+                android:saveEnabled="true"
+                android:id="@+id/contentsEditText" />
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:id="@+id/addView3"
+        android:background="#303F9F"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:rating="2"
+        android:max="5"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:id="@+id/itemRating" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="..."
+        android:id="@+id/itemEditText" />
+
+</LinearLayout>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:id="@+id/addView4"
+        android:background="#303F9F"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="저장"
+            android:id="@+id/btn_save"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="right" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_send"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="right" />
+
+
+    </TableRow>
+
+
+
+</LinearLayout>
